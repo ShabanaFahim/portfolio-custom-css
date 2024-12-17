@@ -1,0 +1,62 @@
+/* Container for Skills Section */
+.skills-container {
+    padding: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Skills Section Grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 180px;
+    align-items: left;
+  }
+  
+  @media (min-width: 360px) {
+    .skills-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Section Title */
+  .skills-title {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .skills-title {
+      font-size: 3rem;
+    }
+  }
+  
+  /* Section Description */
+  .skills-description {
+    color: #6b7280; /* Replace with your preferred grey */
+    margin-top: 8px;
+    line-height: 1.6;
+  }
+  
+  /* Skills List */
+  .skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 1.875rem; /* Equivalent to text-3xl */
+    color: #ffcc00; /* Replace with your preferred accent color */
+  }
+  
+  @media (min-width: 640px) {
+    .skills-list {
+      font-size: 2.25rem; /* Equivalent to text-4xl */
+    }
+  }
+  
+  /* Individual Skill Column */
+  .skills-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  

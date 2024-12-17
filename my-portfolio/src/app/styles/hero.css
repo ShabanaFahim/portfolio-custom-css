@@ -1,0 +1,42 @@
+/* hero.css */
+/* Hero Container */
+.hero-container {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 60px); /* Adjust the height to exclude the Navbar height */
+  }
+  
+  /* Left Side Placeholder (for large screens) */
+  .hero-left {
+    display: none;
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-left {
+      display: block;
+    }
+  }
+  
+  /* Hero Text Section */
+  .hero-text {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  @media (min-width: 640px) {
+    .hero-text {
+      font-size: 100px;
+    }
+  }
+  
